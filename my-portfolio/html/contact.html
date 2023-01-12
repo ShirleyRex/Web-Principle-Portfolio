@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirley Ugwa | Website</title>
+    <link rel="stylesheet" href="/my-portfolio/css/contact.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="banner">
+            <img src="/my-portfolio/images/navigationimage.jpeg" class="cover">
+        </div> 
+        <div class="navLink">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/my-portfolio/html/about.html">About</a></li>
+                <li><a href="/my-portfolio/html/academic.html">Academic History</a></li>
+                <li><a href="/my-portfolio/html/professional.html">Professional History</a></li>
+                <li><a href="/my-portfolio/html/testimonial.html">Testimonial</a></li>
+                <li><a href="/my-portfolio/html/portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="portfolio.html" class="btn">My Portfolio</a>
+        </header>
+    </section>
+
+    <section class="contact">
+        <div class="row">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="row">
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <textarea>Enter your message</textarea>
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="sci">
+            <li><a href="https://www.linkedin.com/in/shirley-abaegbu"><box-icon name='linkedin-square' type='logo' ></box-icon></a></li>
+            <li><a href="https://github.com/ShirleyRex/"><box-icon name='github' type='logo' ></box-icon></a></li>
+            <li><a href="https://twitter.com/rex_shirley"><box-icon name='twitter' type='logo' ></box-icon></a></li>
+            <li><a href="https://www.facebook.com/Shirleyrex"><box-icon type='logo' name='meta'></box-icon></a></li>
+            <li><a href="https://www.instagram.com/shirley_rex/"><box-icon name='instagram' type='logo' ></box-icon></a></li>
+        </ul>
+        <p class="copyrightText">Shirley Abaegbu &copy; 2022</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec');
+        let footer = document.querySelector('footer');
+        menuToggle.onclick = function() {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active');
+            footer.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
