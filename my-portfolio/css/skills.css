@@ -1,78 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-/* Base Styling */ 
+/* Base Styling */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
-}
-
-
-h1,
-h2,
-small {
-  margin: 0 auto;
-}
-
-h1 {
-  color: #ffa500;
-  font-weight: 800;
-  font-size: 24px;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-small {
-  font-size: 10px;
-}
-
-small a {
-  color: #777;
-}
-
-small a:hover {
-  color: #ffa500;
-}
-
-.row img {
-  width: 100%;
-  height: auto;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  width: 30%;
-  align-items: center;
-  margin: auto;
+  text-decoration: none;
 }
 
 /* Hero Section */
 
 .navigation {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
 }
 
 .navigation.active {
@@ -83,7 +40,7 @@ small a:hover {
   position: relative;
   width: 50%;
   height: 100%;
-} 
+}
 
 .cover {
   position: absolute;
@@ -128,6 +85,22 @@ small a:hover {
   color: #ffa500;
 }
 
+.sec {
+  position: relative;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s;
+}
+
+.sec.active {
+  left: 100%;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -157,7 +130,7 @@ header {
 }
 
 .toggle::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 3px;
@@ -167,7 +140,7 @@ header {
 }
 
 .toggle::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 3px;
@@ -195,34 +168,32 @@ header {
   font-weight: 500;
   border-radius: 4px;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  left: 0;
 }
 
-.btn.active {
-  left: 100%;
-}
-
-/* Portfolio */
-
-section {
-  padding: 50px 0;
+.sec .portfolio-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.content {
-  padding: 16px;
+.sec .portfolio-item {
+  flex: 1;
+  margin: 10px;
+  text-align: left;
 }
 
-.row .btn {
+.sec .portfolio-item img {
+  width: 70%;
+}
+
+.portfolio-container .btn {
   background: #ffa500;
   margin: 2px;
+  padding: 5px 15px;
 }
 
-/* Footer */
-
 footer {
+  position: absolute;
   bottom: 0;
   left: 0;
   padding: 20px 100px;
@@ -257,6 +228,36 @@ footer.active {
   opacity: 0.8;
 }
 
+.connect {
+  font-weight: 500;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+.email-link {
+  color: #777;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #ffa500;
+}
+
+.phone-link {
+  color: #777;
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  color: #ffa500;
+}
+
+.copyrightText {
+  font-weight: 500;
+  color: #777;
+  letter-spacing: 1px;
+}
+
 .copyrightText {
   font-weight: 500;
   color: #777;
@@ -277,11 +278,28 @@ footer.active {
     padding: 20px 40px;
   }
 
+  .sec .imgBx {
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    margin-top: 100px;
+  }
+
+  .sec .content {
+    margin-top: 100px;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
   footer {
     position: relative;
     flex-direction: column;
     align-items: flex-start;
     display: block;
+  }
+
+  .sec .content h2 span {
+    font-size: 2em;
   }
 
   .banner {
@@ -300,24 +318,4 @@ footer.active {
     font-size: 1.5em;
     margin-left: 50px;
   }
-
-  /* Portfolio */
-
-  .row {
-    position: relative;
-    width: 70%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .content {
-    left: 0;
-  }
-
-  .content.active {
-    left: 100%;
-  }
-}  
-
-  
+}

@@ -242,6 +242,36 @@ footer.active {
   opacity: 0.8;
 }
 
+.connect {
+  font-weight: 500;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+.email-link {
+  color: #777;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #ffa500;
+}
+
+.phone-link {
+  color: #777;
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  color: #ffa500;
+}
+
+.copyrightText {
+  font-weight: 500;
+  color: #777;
+  letter-spacing: 1px;
+}
+
 .copyrightText {
   font-weight: 500;
   color: #777;

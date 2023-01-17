@@ -170,41 +170,51 @@ header {
   letter-spacing: 1px;
 }
 
-.sec .imgBx {
-  position: relative;
-  min-width: 500px;
-  height: 500px;
+.testimonial-section {
+  text-align: center;
+}
+
+.testimonial-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.client-image {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  overflow: hidden;
+  margin-right: 30px;
 }
 
-.sec .content {
-  max-width: 700px;
-  margin-left: 40px;
+.client-info {
+  text-align: left;
 }
 
-.sec .content h2 {
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #777;
-  line-height: 2.5em;
+.client-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.sec .content h2 span {
-  font-family: 700;
-  color: #ffa500;
-  font-size: 3em;
+.client-info p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 0;
 }
 
-.sec .content p {
-  color: #777;
-  font-size: 1.2em;
-  margin-bottom: 20px;
+.testimonial-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 10px;
 }
 
-.sec .content .btn {
-  background: #ffa500;
-}
 
 footer {
   position: absolute;
@@ -240,6 +250,36 @@ footer.active {
   margin-right: 20px;
   display: inline-block;
   opacity: 0.8;
+}
+
+.connect {
+  font-weight: 500;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+.email-link {
+  color: #777;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #ffa500;
+}
+
+.phone-link {
+  color: #777;
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  color: #ffa500;
+}
+
+.copyrightText {
+  font-weight: 500;
+  color: #777;
+  letter-spacing: 1px;
 }
 
 .copyrightText {

@@ -170,41 +170,30 @@ header {
   letter-spacing: 1px;
 }
 
-.sec .imgBx {
-  position: relative;
-  min-width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  overflow: hidden;
+.sec .experience-content {
+  justify-content: center;
 }
 
-.sec .content {
-  max-width: 700px;
-  margin-left: 40px;
+.sec.experience-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.sec .content h2 {
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #777;
-  line-height: 2.5em;
+.sec.experience-content ol {
+  list-style-type: upper-roman; 
 }
 
-.sec .content h2 span {
-  font-family: 700;
-  color: #ffa500;
-  font-size: 3em;
+.sec.experience-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.sec .content p {
-  color: #777;
-  font-size: 1.2em;
-  margin-bottom: 20px;
+.sec.experience-content li {
+  margin-bottom: 10px;
 }
 
-.sec .content .btn {
-  background: #ffa500;
-}
 
 footer {
   position: absolute;
@@ -240,6 +229,36 @@ footer.active {
   margin-right: 20px;
   display: inline-block;
   opacity: 0.8;
+}
+
+.connect {
+  font-weight: 500;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+.email-link {
+  color: #777;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #ffa500;
+}
+
+.phone-link {
+  color: #777;
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  color: #ffa500;
+}
+
+.copyrightText {
+  font-weight: 500;
+  color: #777;
+  letter-spacing: 1px;
 }
 
 .copyrightText {

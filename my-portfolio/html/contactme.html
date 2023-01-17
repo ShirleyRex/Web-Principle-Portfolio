@@ -5,31 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shirley Ugwa | Website</title>
-    <link rel="stylesheet" href="../my-portfolio/css/home.css" />
+    <link rel="stylesheet" href="/my-portfolio/css/contactme.css" />
   </head>
   <body>
     <div class="navigation">
       <div class="banner">
-        <img src="./my-portfolio/images/navigationimage.jpeg" class="cover" />
+        <img src="/my-portfolio/images/navigationimage.jpeg" class="cover" />
       </div>
       <div class="navLink">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./my-portfolio/html/about.html">About</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/my-portfolio/html/about.html">About</a></li>
           <li>
-            <a href="./my-portfolio/html/academic.html">Academic History</a>
+            <a href="/my-portfolio/html/academic.html">Academic History</a>
           </li>
           <li>
-            <a href="./my-portfolio/html/professional.html"
+            <a href="/my-portfolio/html/professional.html"
               >Professional History</a
             >
           </li>
-          <li><a href="./my-portfolio/html/skills.html">My Skills</a></li>
-          <li>
-            <a href="./my-portfolio/html/testimonial.html">Testimonial</a>
-          </li>
-          <li><a href="./my-portfolio/html/portfolio.html">Portfolio</a></li>
-          <li><a href="./my-portfolio/html/contactme.html">Contact Me</a></li>
+          <li><a href="/my-portfolio/html/testimonial.html">Testimonial</a></li>
+          <li><a href="/my-portfolio/html/skills.html">My Skills</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
         </ul>
       </div>
     </div>
@@ -37,25 +34,42 @@
     <section class="sec">
       <header>
         <div class="toggle"></div>
-        <a href="./my-portfolio/html/skills.html" class="btn"
-          >My Skills</a
-        >
+        <a href="/my-portfolio/html/skills.html" class="btn">My Skills</a>
       </header>
 
-      <div class="imgBx">
-        <img src="./my-portfolio/images/homepageimage.jpeg" class="cover" />
-      </div>
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-      <div class="content">
-        <h2>Hi, I am<br /><span>Shirley Ugwa</span></h2>
-        <p>
-          A Frontend Developer passionate about helping people understand
-          products by creating useful interfaces, and making accessible web
-          applications
-        </p>
-        <a href="./my-portfolio/cv/Shirley Ugwa.pdf" class="btn"
-          >Download My CV</a
-        >
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            maxlength="500"
+          ></textarea>
+          <p id="counter"></p>
+
+          <label for="return-address">Return Contact Address:</label>
+          <input
+            type="text"
+            id="return-address"
+            name="return-address"
+            required
+          />
+
+          <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+
+          <input type="submit" value="Send" />
+        </form>
       </div>
     </section>
 
@@ -106,6 +120,10 @@
         menuToggle.classList.toggle("active");
         navigation.classList.toggle("active");
         sec.classList.toggle("active");
+        document.getElementById("message").oninput = function () {
+          document.getElementById("counter").innerHTML =
+            "Characters remaining: " + (500 - this.value.length);
+        };
         footer.classList.toggle("active");
       };
     </script>
