@@ -315,4 +315,9 @@ footer.active {
     font-size: 1.5em;
     margin-left: 50px;
   }
+
+  .sec .portfolio-container {
+    display: block;
+    text-align: center;
+  }
 }

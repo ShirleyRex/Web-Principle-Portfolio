@@ -346,4 +346,16 @@ footer.active {
     font-size: 1.5em;
     margin-left: 50px;
   }
+
+  .sec .testimonial-section {
+    padding-top: 50px;
+  }
+
+  .sec .testimonial-section .testimonial {
+    display: block;
+  }
+
+  .sec .testimonial-section .testimonial .client-info {
+    text-align: center;
+  }
 }

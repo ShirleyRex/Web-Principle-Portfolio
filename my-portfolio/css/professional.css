@@ -338,4 +338,8 @@ footer.active {
     font-size: 1.5em;
     margin-left: 50px;
   }
+
+  .sec .experience-content {
+    padding-top: 50px;
+  }
 }
