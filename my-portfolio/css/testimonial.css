@@ -101,6 +101,10 @@ a {
   left: 100%;
 }
 
+h2 {
+  color: #ffa500;
+}
+
 header {
   position: absolute;
   top: 0;

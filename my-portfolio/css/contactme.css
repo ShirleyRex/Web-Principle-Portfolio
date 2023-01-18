@@ -188,14 +188,35 @@ textarea {
   width: 90%;
 }
 
+::placeholder {
+  color: #ccc;
+}
+
+input, textarea{
+  background-color: #f2eeee;
+  color: #333;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 input[type="submit"] {
   background-color: #ffa500;
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 9px;
   cursor: pointer;
   margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+textarea {
+  height: 98px;
 }
 
 #counter {

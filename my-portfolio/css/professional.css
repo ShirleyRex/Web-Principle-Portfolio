@@ -85,6 +85,22 @@ a {
   color: #ffa500;
 }
 
+h2 {
+  color: #ffa500;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+
+
 .sec {
   position: relative;
   left: 0;
@@ -169,6 +185,7 @@ header {
   border-radius: 4px;
   letter-spacing: 1px;
 }
+
 
 .sec .experience-content {
   justify-content: center;
