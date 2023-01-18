@@ -261,6 +261,10 @@ footer.active {
   letter-spacing: 1px;
 }
 
+.sec .portfolio-container .portfolio-item .increase-img {
+  width: 180%;
+}
+
 /* Media Queries */
 
 @media (max-width: 991px) {
