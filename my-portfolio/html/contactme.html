@@ -40,11 +40,29 @@
       <div class="contact-container">
         <h2>Contact Me</h2>
         <form action="#" method="post">
-          <input type="text" id="name" name="name" placeholder="Name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
 
-          <input type="email" id="email" name="email" placeholder="Email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
 
-          <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+          />
 
           <textarea
             id="message"
@@ -53,7 +71,7 @@
             required
             maxlength="500"
           ></textarea>
-          <p id="counter"></p>
+          <p id="counter" style="display: block">0/500</p>
 
           <div class="g-recaptcha" data-sitekey="your_site_key"></div>
 
@@ -105,6 +123,12 @@
       let navigation = document.querySelector(".navigation");
       let sec = document.querySelector(".sec");
       let footer = document.querySelector("footer");
+      let message = document.getElementById("message");
+      let counter = document.getElementById("counter");
+
+      message.addEventListener("keypress", () => {
+        counter.innerHTML = `${message.value.length}/500`;
+      });
       menuToggle.onclick = function () {
         menuToggle.classList.toggle("active");
         navigation.classList.toggle("active");

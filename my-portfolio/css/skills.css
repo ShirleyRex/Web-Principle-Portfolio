@@ -325,3 +325,13 @@ footer.active {
     text-align: center;
   }
 }
+
+@media (max-width: 991px) {
+  .sec .portfolio-container {
+    padding-top: 50px;
+  }
+
+  .sec .portfolio-container .portfolio-item .increase-img {
+    width: 80%;
+  }
+}

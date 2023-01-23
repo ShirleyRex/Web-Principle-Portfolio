@@ -222,7 +222,7 @@ textarea {
 #counter {
   color: #ccc;
   font-size: 0.8em;
-  float: right;
+  text-align: right;
 }
 
 footer {
